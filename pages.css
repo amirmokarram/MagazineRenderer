@@ -41,6 +41,9 @@ page-body[layout="row"] {
     flex-direction: column;
 }
 
+section {
+    display: flex;
+}
 section[mode="fill"] {
     flex: 1;
 }
@@ -48,6 +51,7 @@ section[type="text"] {
     border: 1px solid green;
 }
 section[type="image"] {
+    align-items: baseline;
     overflow: hidden;
     border: 1px solid orange;
 

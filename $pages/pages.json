@@ -24,7 +24,8 @@
                     "italic": false,
                     "underline": false,
                     "align": "start",
-                    "size": "large",
+                    "fontSize": "large",
+                    "size": 20,
                     "text": "Bold"
                 },
                 {
@@ -33,7 +34,7 @@
                     "italic": true,
                     "underline": false,
                     "align": "center",
-                    "size": "medium",
+                    "fontSize": "medium",
                     "text": "Italic"
                 },
                 {
@@ -41,8 +42,9 @@
                     "bold": false,
                     "italic": false,
                     "underline": true,
+                    "padding": 10,
                     "align": "end",
-                    "size": "medium",
+                    "fontSize": "medium",
                     "text": "Underline"
                 },
                 {
@@ -50,8 +52,8 @@
                     "bold": false,
                     "italic": false,
                     "underline": false,
-                    "align": "start",
-                    "size": "medium",
+                    "align": "center",
+                    "fontSize": "medium",
                     "text": "A string that specifies the type of element to be created. The nodeName of the created element is initialized with the value of tagName. Don't use qualified names (like 'html:a') with this method. When called on an HTML document, createElement() converts tagName to lower case before creating the element. In Firefox, Opera, and Chrome, createElement(null) works like createElement('null')."
                 },
                 {
@@ -99,13 +101,14 @@
             "sections": [
                 {
                     "type": "text",
-                    "padding": 5,
+                    "padding": 2,
+                    "verticalAlign": "center",
                     "mode": "fill",
                     "bold": true,
                     "italic": false,
                     "underline": false,
-                    "align": "end",
-                    "size": "large",
+                    "align": "center",
+                    "fontSize": "large",
                     "text": "1"
                 }
             ]
@@ -122,22 +125,24 @@
                     "type": "image",
                     "mode": "fill",
                     "align": "center",
+                    "verticalAlign": "center",
                     "source": "$pages/logo.png"
                 }
             ]
         },
         "body": {
             "padding": 5,
-            "rotation": 90,
+            "landscape": true,
             "sectionLayout": "row",
             "sections": [
                 {
                     "type": "text",
                     "bold": false,
                     "italic": false,
+                    "size": 40,
                     "underline": false,
                     "align": "start",
-                    "size": "medium",
+                    "fontSize": "medium",
                     "text": "A string that specifies the type of element to be created. The nodeName of the created element is initialized with the value of tagName. Don't use qualified names (like 'html:a') with this method. When called on an HTML document, createElement() converts tagName to lower case before creating the element. In Firefox, Opera, and Chrome, createElement(null) works like createElement('null')."
                 },
                 {
@@ -186,7 +191,7 @@
                     "italic": false,
                     "underline": false,
                     "align": "end",
-                    "size": "large",
+                    "fontSize": "large",
                     "text": "1"
                 }
             ]

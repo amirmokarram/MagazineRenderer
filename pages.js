@@ -28,25 +28,27 @@ class PageRenderer {
 
         if (part.hasOwnProperty("sectionLayout"))
             partEl.setAttribute("layout", part.sectionLayout);
-        if (part.hasOwnProperty("rotation"))
-            partEl.style.transform = `rotate(${part.rotation}deg)`;
+        if (part.landscape)
+            partEl.style.writingMode = 'tb-rl';
         if (part.hasOwnProperty("padding"))
             partEl.style.padding = `${part.padding}mm`;
         if (part.hasOwnProperty("size"))
             partEl.style.height = `${part.size}mm`;
 
         part.sections.forEach(section => {
-            SectionRenderer.sectionRendererFactory(section).render(partEl);
+            SectionRenderer.sectionRendererFactory(part, section).render(partEl);
         });
 
         pageEl.append(partEl);
     }
 }
 class SectionRenderer {
+    #part = null;
     #section = null;
     #sectionEl = null;
 
-    constructor(section) {
+    constructor(part, section) {
+        this.#part = part;
         this.#section = section;
         this.#sectionEl = document.createElement("section");
     }
@@ -66,25 +68,53 @@ class SectionRenderer {
         if (section.hasOwnProperty("mode"))
             sectionEl.setAttribute("mode", section.mode);
 
+        if (section.hasOwnProperty("align")) {
+            sectionEl.style.justifyContent = this.#getFlexAlignment(section.align);
+            sectionEl.style.textAlign = section.align;
+        }
+
+        if (section.hasOwnProperty("padding"))
+            sectionEl.style.padding = `${section.padding}mm`;
+
+        if (section.hasOwnProperty("verticalAlign"))
+            sectionEl.style.alignItems = this.#getFlexAlignment(section.verticalAlign);
+
+        if (section.hasOwnProperty("size")) {
+            if (this.#part.landscape)
+                sectionEl.style.width = `${section.size}mm`;
+            else
+                sectionEl.style.height = `${section.size}mm`;
+        }
+
         parentEl.append(sectionEl);
     }
 
-    static sectionRendererFactory(section) {
+    #getFlexAlignment(value) {
+        switch (value) {
+            case "start":
+            case "end":
+                return `flex-${value}`;
+            default:
+                return value;
+        }
+    }
+
+    static sectionRendererFactory(part, section) {
         switch (section.type) {
             case "text":
-                return new TextSectionRenderer(section);
+                return new TextSectionRenderer(part, section);
             case "image":
-                return new ImageSectionRenderer(section);
+                return new ImageSectionRenderer(part, section);
             case "table":
-                return new TableSectionRenderer(section);
+                return new TableSectionRenderer(part, section);
             default:
                 throw new Error(`The '${section.type}' section renderer is not defined.`);
         }
     }
 }
 class TextSectionRenderer extends SectionRenderer {
-    constructor(section) {
-        super(section);
+    constructor(...args) {
+        super(...args);
     }
 
     render(parentEl) {
@@ -101,16 +131,13 @@ class TextSectionRenderer extends SectionRenderer {
         if (this._section.hasOwnProperty("underline") && this._section.underline)
             this._sectionEl.style.textDecoration = "underline";
 
-        if (this._section.hasOwnProperty("size"))
-            this._sectionEl.style.fontSize = this._section.size;
-
-        if (this._section.hasOwnProperty("align"))
-            this._sectionEl.style.textAlign = this._section.align;
+        if (this._section.hasOwnProperty("fontSize"))
+            this._sectionEl.style.fontSize = this._section.fontSize;
     }
 }
 class ImageSectionRenderer extends SectionRenderer {
-    constructor(section) {
-        super(section);
+    constructor(...args) {
+        super(...args);
     }
 
     render(parentEl) {
@@ -129,8 +156,8 @@ class ImageSectionRenderer extends SectionRenderer {
     }
 }
 class TableSectionRenderer extends SectionRenderer {
-    constructor(section) {
-        super(section);
+    constructor(...args) {
+        super(...args);
     }
 
     render(parentEl) {
