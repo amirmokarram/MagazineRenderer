@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(161, 161, 161);
+}
+
+page-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 10mm auto;
+    background: white;
+    box-shadow: 0 0 5mm rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+page-container[size="A4"][layout="portrait"] {
+    width: 210mm;
+    min-width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+}
+page-container[size="A4"][layout="landscape"] {
+    width: 297mm;
+    min-width: 297mm;
+    height: 210mm;
+    min-height: 210mm;
+}
+
+page-body, page-header, page-footer {
+    display: flex;
+    overflow: hidden;
+}
+page-body {
+    flex: 1;
+}
+
+page-body[layout="column"] {
+    flex-direction: row;
+}
+page-body[layout="row"] {
+    flex-direction: column;
+}
+
+section[mode="fill"] {
+    flex: 1;
+}
+section[type="text"] {
+    border: 1px solid green;
+}
+section[type="image"] {
+    overflow: hidden;
+    border: 1px solid orange;
+
+}
+section[type="table"] {
+    border: 1px solid magenta;
+}
+
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+    page-container, page-header, page-body, section, page-footer {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-width: initial;
+        height: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}

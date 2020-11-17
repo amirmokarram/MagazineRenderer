@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pages Viewer</title>
+        <link href="pages.css" rel="stylesheet" type="text/css">
+        <script type="module">
+            import { PageRenderer } from './pages.js';
+
+            window.onload = function(){
+                fetch("$pages/pages.json")
+                .then(response => response.json())
+                .then(pages => {
+                    if (pages == null)
+                        return;
+                    pages.forEach(page => {
+                        let pageRenderer = new PageRenderer(page);
+                        pageRenderer.render(document.body);
+                    });
+                });
+            }
+        </script>
+    </head>
+    <body dir="rtl">
+    </body>
+</html>

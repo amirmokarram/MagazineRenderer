@@ -1,0 +1,195 @@
+[
+    {
+        "size": "A4",
+        "layout": "portrait",
+        "header": {
+            "size": 30,
+            "sectionLayout": "column",
+            "sections": [
+                {
+                    "type": "image",
+                    "mode": "fill",
+                    "align": "center",
+                    "source": "$pages/logo.png"
+                }
+            ]
+        },
+        "body": {
+            "padding": 5,
+            "sectionLayout": "row",
+            "sections": [
+                {
+                    "type": "text",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false,
+                    "align": "start",
+                    "size": "large",
+                    "text": "Bold"
+                },
+                {
+                    "type": "text",
+                    "bold": false,
+                    "italic": true,
+                    "underline": false,
+                    "align": "center",
+                    "size": "medium",
+                    "text": "Italic"
+                },
+                {
+                    "type": "text",
+                    "bold": false,
+                    "italic": false,
+                    "underline": true,
+                    "align": "end",
+                    "size": "medium",
+                    "text": "Underline"
+                },
+                {
+                    "type": "text",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false,
+                    "align": "start",
+                    "size": "medium",
+                    "text": "A string that specifies the type of element to be created. The nodeName of the created element is initialized with the value of tagName. Don't use qualified names (like 'html:a') with this method. When called on an HTML document, createElement() converts tagName to lower case before creating the element. In Firefox, Opera, and Chrome, createElement(null) works like createElement('null')."
+                },
+                {
+                    "type": "image",
+                    "width": "100%",
+                    "source": "$pages/image01.jpg"
+                },
+                {
+                    "type": "table",
+                    "mode": "fill",
+                    "rows": [
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "footer": {
+            "size": 15,
+            "sectionLayout": "column",
+            "sections": [
+                {
+                    "type": "text",
+                    "padding": 5,
+                    "mode": "fill",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false,
+                    "align": "end",
+                    "size": "large",
+                    "text": "1"
+                }
+            ]
+        }
+    },
+    {
+        "size": "A4",
+        "layout": "portrait",
+        "header": {
+            "size": 30,
+            "sectionLayout": "column",
+            "sections": [
+                {
+                    "type": "image",
+                    "mode": "fill",
+                    "align": "center",
+                    "source": "$pages/logo.png"
+                }
+            ]
+        },
+        "body": {
+            "padding": 5,
+            "rotation": 90,
+            "sectionLayout": "row",
+            "sections": [
+                {
+                    "type": "text",
+                    "bold": false,
+                    "italic": false,
+                    "underline": false,
+                    "align": "start",
+                    "size": "medium",
+                    "text": "A string that specifies the type of element to be created. The nodeName of the created element is initialized with the value of tagName. Don't use qualified names (like 'html:a') with this method. When called on an HTML document, createElement() converts tagName to lower case before creating the element. In Firefox, Opera, and Chrome, createElement(null) works like createElement('null')."
+                },
+                {
+                    "type": "table",
+                    "mode": "fill",
+                    "rows": [
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "footer": {
+            "size": 15,
+            "sectionLayout": "column",
+            "sections": [
+                {
+                    "type": "text",
+                    "padding": 5,
+                    "mode": "fill",
+                    "bold": true,
+                    "italic": false,
+                    "underline": false,
+                    "align": "end",
+                    "size": "large",
+                    "text": "1"
+                }
+            ]
+        }
+    }
+]
