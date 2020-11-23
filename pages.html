@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pages Viewer</title>
-        <link href="pages.css" rel="stylesheet" type="text/css">
-        <script type="module">
-            import { PageRenderer } from './pages.js';
 
-            window.onload = function(){
-                fetch("$pages/pages.json")
+<head>
+    <title>Pages Viewer</title>
+    <link href="pages.css" rel="stylesheet" type="text/css">
+    <script type="module">
+        import { PageRenderer } from './pages.js';
+
+        window.onload = () => {
+            let pageCollection = [];
+
+            fetch("$pages/pages.json")
                 .then(response => response.json())
                 .then(pages => {
                     if (pages == null)
@@ -15,11 +18,18 @@
                     pages.forEach(page => {
                         let pageRenderer = new PageRenderer(page);
                         pageRenderer.render(document.body);
+
+                        pageCollection.push(pageRenderer);
                     });
+                })
+                .then(() => {
+                    pageCollection.forEach(page => page.checkOverflow());
                 });
-            }
-        </script>
-    </head>
-    <body dir="rtl">
-    </body>
+        };
+    </script>
+</head>
+
+<body dir="rtl">
+</body>
+
 </html>

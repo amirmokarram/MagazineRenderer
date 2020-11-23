@@ -43,6 +43,7 @@ page-body[layout="row"] {
 
 section {
     display: flex;
+    overflow: hidden;
 }
 section[mode="fill"] {
     flex: 1;
@@ -54,10 +55,36 @@ section[type="image"] {
     align-items: baseline;
     overflow: hidden;
     border: 1px solid orange;
-
+}
+section[type="image"] > img {
+    object-fit: contain;
 }
 section[type="table"] {
     border: 1px solid magenta;
+}
+section[type="table"] td {
+    white-space: nowrap;
+}
+
+@font-face {
+    font-family: nasim;
+    src: url(Fonts/BNasimBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: nazanin;
+    src: url(Fonts/BNazanin.ttf) format("truetype");
+}
+@font-face {
+    font-family: titr;
+    src: url(Fonts/BTitrBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: yekan;
+    src: url(Fonts/BYekan.ttf) format("truetype");
+}
+@font-face {
+    font-family: zar;
+    src: url(Fonts/BZar.ttf) format("truetype");
 }
 
 @media print {

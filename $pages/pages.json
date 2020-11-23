@@ -17,6 +17,12 @@
         "body": {
             "padding": 5,
             "sectionLayout": "row",
+            "defaultStyles": [
+                {
+                    "type": "text",
+                    "bold": true
+                }
+            ],
             "sections": [
                 {
                     "type": "text",
@@ -49,6 +55,36 @@
                 },
                 {
                     "type": "text",
+                    "fontName": "nasim",
+                    "fontSize": "xx-large",
+                    "text": "فونت نسیم"
+                },
+                {
+                    "type": "text",
+                    "fontName": "nazanin",
+                    "fontSize": "xx-large",
+                    "text": "فونت نازنین"
+                },
+                {
+                    "type": "text",
+                    "fontName": "titr",
+                    "fontSize": "xx-large",
+                    "text": "فونت تیتر"
+                },
+                {
+                    "type": "text",
+                    "fontName": "yekan",
+                    "fontSize": "xx-large",
+                    "text": "فونت یکان"
+                },
+                {
+                    "type": "text",
+                    "fontName": "zar",
+                    "fontSize": "xx-large",
+                    "text": "فونت زر"
+                },
+                {
+                    "type": "text",
                     "bold": false,
                     "italic": false,
                     "underline": false,
@@ -58,8 +94,15 @@
                 },
                 {
                     "type": "image",
-                    "width": "100%",
+                    "height": "100%",
+                    "align": "center",
+                    "size": 20,
                     "source": "$pages/image01.jpg"
+                },
+                {
+                    "type": "image",
+                    "align": "center",
+                    "source": "$pages/logo.png"
                 },
                 {
                     "type": "table",
@@ -74,20 +117,7 @@
                                     "value": "test"
                                 },
                                 {
-                                    "value": "test"
-                                }
-                            ]
-                        },
-                        {
-                            "cells": [
-                                {
-                                    "value": "test"
-                                },
-                                {
-                                    "value": null
-                                },
-                                {
-                                    "value": "test"
+                                    "value": "te jksdnjk sdn jksdnfjk sdn nxcm,vn xc,vn sdjkfn sdjknvm,xcvn sjibf jkdnvm, xcnvj sfjk xncvm,xcnsdhjk nxvm,xcnvxn vm, xncvm,nsdjfn svnxcm,vn xcnvsji dn m,xcvn djfn xcm,vn xcvnst"
                                 }
                             ]
                         }
@@ -148,6 +178,7 @@
                 {
                     "type": "table",
                     "mode": "fill",
+                    "fontSize": "xxx-large",
                     "rows": [
                         {
                             "cells": [
@@ -172,6 +203,1280 @@
                                 },
                                 {
                                     "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "test"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "value": "test"
+                                },
+                                {
+                                    "value": null
+                                },
+                                {
+                                    "value": "AMIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR"
                                 }
                             ]
                         }
