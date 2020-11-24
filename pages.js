@@ -13,6 +13,11 @@ class PageRenderer {
         pageEl.setAttribute("size", page.size);
         pageEl.setAttribute("layout", page.layout);
 
+        if (page.hasOwnProperty("direction"))
+            pageEl.style.direction = page.direction;
+        else
+            pageEl.setAttribute("dir", "auto");
+
         this.#pagePartRenderer(pageEl, "header");
         this.#pagePartRenderer(pageEl, "body");
         this.#pagePartRenderer(pageEl, "footer");
@@ -81,6 +86,11 @@ class SectionRenderer {
         sectionEl.setAttribute("type", section.type);
         if (section.hasOwnProperty("mode"))
             sectionEl.setAttribute("mode", section.mode);
+
+        if (section.hasOwnProperty("direction"))
+            sectionEl.style.direction = section.direction;
+        else
+            sectionEl.setAttribute("dir", "auto");
 
         if (section.hasOwnProperty("align")) {
             sectionEl.style.justifyContent = this.#getFlexAlignment(section.align);
@@ -156,7 +166,7 @@ class SectionRenderer {
 
     #reduceFontSize(scope, contentTooSmallCallback) {
         let el = scope._sectionEl;
-        let currentFontSize = parseFloat(window.getComputedStyle(el).getPropertyValue('font-size'));       
+        let currentFontSize = parseFloat(window.getComputedStyle(el).getPropertyValue('font-size'));
 
         el.style.fontSize = `${currentFontSize - 0.1}px`;
 

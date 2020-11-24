@@ -147,6 +147,7 @@
     {
         "size": "A4",
         "layout": "portrait",
+        "direction": "ltr",
         "header": {
             "size": 30,
             "sectionLayout": "column",
