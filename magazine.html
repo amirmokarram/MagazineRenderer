@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Magazine Viewer</title>
+    <link rel="shortcut icon" href="#" />
+    <link href="magazine.css" rel="stylesheet" type="text/css">
+    <script type="module">
+        import { MagazineRenderer } from './magazine.js';
+
+        window.onload = () => {
+            fetch("$magazine/magazine.json")
+                .then(response => response.json())
+                .then(result => {
+                    if (result == null || result.magazine == null)
+                        return;
+
+                    let magazineRenderer = new MagazineRenderer(document.body, result.magazine);
+                    magazineRenderer.render();
+                });
+        };
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

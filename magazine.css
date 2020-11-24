@@ -4,65 +4,75 @@ body {
     background: rgb(161, 161, 161);
 }
 
-page-container {
+magazine>page {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     margin: 10mm auto;
     background: white;
-    box-shadow: 0 0 5mm rgba(0,0,0,0.5);
+    box-shadow: 0 0 5mm rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
-page-container[size="A4"][layout="portrait"] {
+
+magazine>page[size="A4"][layout="portrait"] {
     width: 210mm;
     min-width: 210mm;
     height: 297mm;
     min-height: 297mm;
 }
-page-container[size="A4"][layout="landscape"] {
+
+magazine>page[size="A4"][layout="landscape"] {
     width: 297mm;
     min-width: 297mm;
     height: 210mm;
     min-height: 210mm;
 }
 
-page-body, page-header, page-footer {
+magazine>page>content, magazine>page>header, magazine>page>footer {
     display: flex;
     overflow: hidden;
 }
-page-body {
+
+magazine>page>content {
     flex: 1;
 }
 
-page-body[layout="column"] {
+magazine>page>content[layout="column"] {
     flex-direction: row;
 }
-page-body[layout="row"] {
+
+magazine>page>content[layout="row"] {
     flex-direction: column;
 }
 
-section {
+magazine>page section {
     display: flex;
     overflow: hidden;
 }
-section[mode="fill"] {
+
+magazine>page section[mode="fill"] {
     flex: 1;
 }
-section[type="text"] {
+
+magazine>page section[type="text"] {
     border: 1px solid green;
 }
-section[type="image"] {
+
+magazine>page section[type="image"] {
     align-items: baseline;
     overflow: hidden;
     border: 1px solid orange;
 }
-section[type="image"] > img {
+
+magazine>page section[type="image"]>img {
     object-fit: contain;
 }
-section[type="table"] {
+
+magazine>page section[type="table"] {
     border: 1px solid magenta;
 }
-section[type="table"] td {
+
+magazine>page section[type="table"] td {
     white-space: nowrap;
 }
 
@@ -70,18 +80,22 @@ section[type="table"] td {
     font-family: nasim;
     src: url(Fonts/BNasimBold.ttf) format("truetype");
 }
+
 @font-face {
     font-family: nazanin;
     src: url(Fonts/BNazanin.ttf) format("truetype");
 }
+
 @font-face {
     font-family: titr;
     src: url(Fonts/BTitrBold.ttf) format("truetype");
 }
+
 @font-face {
     font-family: yekan;
     src: url(Fonts/BYekan.ttf) format("truetype");
 }
+
 @font-face {
     font-family: zar;
     src: url(Fonts/BZar.ttf) format("truetype");
@@ -92,7 +106,7 @@ section[type="table"] td {
         width: 210mm;
         height: 297mm;
     }
-    page-container, page-header, page-body, section, page-footer {
+    magazine>page, magazine>page>header, magazine>page>content, magazine>page section, magazine>page>footer {
         margin: 0;
         border: initial;
         border-radius: initial;

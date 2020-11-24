@@ -1,15 +1,43 @@
+class MagazineRenderer {
+    #containerEl = null;
+    #magazine = null;
+
+    constructor(containerEl, magazine) {
+        this.#containerEl = containerEl;
+        this.#magazine = magazine;
+    }
+
+    render() {
+        let magazine = this.#magazine;
+        let magazineEl = document.createElement("magazine");
+
+        let pages = [];
+        magazine.pages.forEach(page => {
+            let pageRenderer = new PageRenderer(magazineEl, page);
+            pageRenderer.render();
+
+            pages.push(pageRenderer);
+        });
+
+        this.#containerEl.append(magazineEl);
+
+        pages.forEach(page => page.checkOverflow());
+    }
+}
 class PageRenderer {
+    #containerEl = null;
     #page = null;
     #sections = [];
 
-    constructor(page) {
+    constructor(containerEl, page) {
+        this.#containerEl = containerEl;
         this.#page = page;
     }
 
-    render(rootEl) {
+    render() {
         let page = this.#page;
 
-        let pageEl = document.createElement("page-container");
+        let pageEl = document.createElement("page");
         pageEl.setAttribute("size", page.size);
         pageEl.setAttribute("layout", page.layout);
 
@@ -19,10 +47,10 @@ class PageRenderer {
             pageEl.setAttribute("dir", "auto");
 
         this.#pagePartRenderer(pageEl, "header");
-        this.#pagePartRenderer(pageEl, "body");
+        this.#pagePartRenderer(pageEl, "content");
         this.#pagePartRenderer(pageEl, "footer");
 
-        rootEl.append(pageEl);
+        this.#containerEl.append(pageEl);
     }
 
     checkOverflow() {
@@ -34,7 +62,7 @@ class PageRenderer {
         if (part == null)
             return;
 
-        let partEl = document.createElement(`page-${partName}`);
+        let partEl = document.createElement(partName);
 
         if (part.hasOwnProperty("sectionLayout"))
             partEl.setAttribute("layout", part.sectionLayout);
@@ -46,8 +74,8 @@ class PageRenderer {
             partEl.style.height = `${part.size}mm`;
 
         part.sections.forEach(section => {
-            let sectionRenderer = SectionRenderer.sectionRendererFactory(part, section);
-            sectionRenderer.render(partEl);
+            let sectionRenderer = SectionRenderer.sectionRendererFactory(partEl, part, section);
+            sectionRenderer.render();
 
             this.#sections.push(sectionRenderer);
         });
@@ -56,11 +84,13 @@ class PageRenderer {
     }
 }
 class SectionRenderer {
+    #containerEl = null;
     #part = null;
     #section = null;
     #sectionEl = null;
 
-    constructor(part, section) {
+    constructor(containerEl, part, section) {
+        this.#containerEl = containerEl;
         this.#part = part;
         this.#section = section;
         this.#sectionEl = document.createElement("section");
@@ -79,7 +109,7 @@ class SectionRenderer {
         return this.#sectionEl.scrollWidth > this.#sectionEl.clientWidth || this.#sectionEl.scrollHeight > this.#sectionEl.clientHeight;
     }
 
-    render(parentEl) {
+    render() {
         let section = this.#section;
         let sectionEl = this.#sectionEl;
 
@@ -116,7 +146,7 @@ class SectionRenderer {
         if (this._section.hasOwnProperty("fontName"))
             this._sectionEl.style.fontFamily = this._section.fontName;
 
-        parentEl.append(sectionEl);
+        this.#containerEl.append(sectionEl);
     }
     checkOverflow() {
         if (!this.isOverflowing)
@@ -188,14 +218,14 @@ class SectionRenderer {
         }
     }
 
-    static sectionRendererFactory(part, section) {
+    static sectionRendererFactory(el, part, section) {
         switch (section.type) {
             case "text":
-                return new TextSectionRenderer(part, section);
+                return new TextSectionRenderer(el, part, section);
             case "image":
-                return new ImageSectionRenderer(part, section);
+                return new ImageSectionRenderer(el, part, section);
             case "table":
-                return new TableSectionRenderer(part, section);
+                return new TableSectionRenderer(el, part, section);
             default:
                 throw new Error(`The '${section.type}' section renderer is not defined.`);
         }
@@ -206,8 +236,8 @@ class TextSectionRenderer extends SectionRenderer {
         super(...args);
     }
 
-    render(parentEl) {
-        super.render(parentEl);
+    render() {
+        super.render();
 
         this._sectionEl.innerText = this._section.text;
 
@@ -226,8 +256,8 @@ class ImageSectionRenderer extends SectionRenderer {
         super(...args);
     }
 
-    render(parentEl) {
-        super.render(parentEl);
+    render() {
+        super.render();
 
         let imgEl = document.createElement("img");
         imgEl.src = this._section.source;
@@ -249,8 +279,8 @@ class TableSectionRenderer extends SectionRenderer {
         super(...args);
     }
 
-    render(parentEl) {
-        super.render(parentEl);
+    render() {
+        super.render();
 
         let tableEl = document.createElement("table");
 
@@ -271,4 +301,4 @@ class TableSectionRenderer extends SectionRenderer {
     }
 }
 
-export { PageRenderer };
+export { MagazineRenderer };
