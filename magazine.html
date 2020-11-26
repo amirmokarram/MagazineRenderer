@@ -11,11 +11,11 @@
         window.onload = () => {
             fetch("$magazine/magazine.json")
                 .then(response => response.json())
-                .then(result => {
-                    if (result == null || result.magazine == null)
+                .then(magazine => {
+                    if (magazine == null)
                         return;
 
-                    let magazineRenderer = new MagazineRenderer(document.body, result.magazine);
+                    let magazineRenderer = new MagazineRenderer(document.body, magazine);
                     magazineRenderer.render();
                 });
         };

@@ -41,11 +41,6 @@ class PageRenderer {
         pageEl.setAttribute("size", page.size);
         pageEl.setAttribute("layout", page.layout);
 
-        if (page.hasOwnProperty("direction"))
-            pageEl.style.direction = page.direction;
-        else
-            pageEl.setAttribute("dir", "auto");
-
         this.#pagePartRenderer(pageEl, "header");
         this.#pagePartRenderer(pageEl, "content");
         this.#pagePartRenderer(pageEl, "footer");
